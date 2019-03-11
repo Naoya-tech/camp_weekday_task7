@@ -32,7 +32,7 @@ class ArticlesController < ApplicationController
     redirect_to articles_path
   end
 
-    private
+  private
 
   def article_params # ストロングパラメータを定義する
     params.require(:article).permit(:title, :body)
