@@ -1,11 +1,11 @@
-<h1>Edit posts</h1>
+<h2>Edit posts</h2>
 <%= form_with model: @article, local: true do |form| %>
 <div>
-  <div class="form-group">
+  <div class="form-group mt-5">
     <%= form.label "Title" %>
     <p><%= form.text_field :title, class: "form-control", placeholder: "#{@article.title}" %></p>
   </div>
-  <div class="form-group">
+  <div class="form-group mt-4">
     <%= form.label "Body" %>
     <p><%= form.text_area :body, rows: 10, class: "form-control", placeholder: "#{@article.body}" %></p>
   </div>
